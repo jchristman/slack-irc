@@ -14,7 +14,8 @@ const config = {
 
         options: {
             port: 6697,             // These options are passed straight to https://github.com/martynsmith/node-irc
-            secure: true
+            secure: true,
+            selfSigned: true
         }
     }
 }
