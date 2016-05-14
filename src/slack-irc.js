@@ -158,7 +158,7 @@ class SlackIRC {
             this.slackSpeak(msg);
         });
 
-        this.irc.client.addListener(`part${this.irc.channel}`, (nick, reason, message) => {
+        this.irc.client.addListener(`part${this.irc.channel}`, (nick, reason, options) => {
             const msg = `${nick} has left ${options.args[0]}`;
             this.slackSpeak(msg);
         });
